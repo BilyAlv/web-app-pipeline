@@ -1,0 +1,27 @@
+{
+  "name": "web-app-pipeline",
+  "version": "1.0.0",
+  "description": "Este es un proyecto de ejemplo para configurar un pipeline básico de CI/CD usando GitHub Actions.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "deploy": "gh-pages -d .",
+    "predeploy": "npm run build",
+    "build": "echo 'No build step configured' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BilyAlv/web-app-pipeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BilyAlv/web-app-pipeline/issues"
+  },
+  "homepage": "https://github.com/BilyAlv/web-app-pipeline#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "gh-pages": "^3.2.3"
+  }
+}
